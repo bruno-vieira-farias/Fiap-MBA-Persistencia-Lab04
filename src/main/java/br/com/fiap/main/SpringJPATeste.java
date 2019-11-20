@@ -19,7 +19,7 @@ public class SpringJPATeste {
                     new Produto(5, "Maracuja")
             ));
             System.out.println(produtoService.findAll());
-//            System.out.println(produtoService.findByName("Maracuja"));
+            System.out.println(produtoService.findByName("Maracuja"));
             ctx.close();
     }
 }

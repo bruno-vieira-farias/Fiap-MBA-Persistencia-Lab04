@@ -32,5 +32,9 @@ public class ProdutoService {
         }
     }
 
+    @Transactional(readOnly=true)
+    public List<Produto> findByName(String nome) {
+        return produtoRepository.findByName(nome);
+    }
 
 }
